@@ -119,7 +119,7 @@
     [Parameter(Mandatory=$false, HelpMessage="Enter OU, example: OU=Computers,OU=ITDep,DC=contoso,DC=com", ValueFromPipelineByPropertyName=$true)]    
     [string]$OU,
     [Parameter(Mandatory=$false, HelpMessage="Enter path for log file, example: C:\Scripts", ValueFromPipelineByPropertyName=$true)]    
-    [string]$LogFilePath = "\\kmafs\data\IT\20 Service Desk\BitLocker Backups\AD_EXPORT",
+    [string]$LogFilePath = "\\HOSTNAME\BitLocker Backups\AD_EXPORT",
     [Parameter(Mandatory=$false, HelpMessage="Enter log file Name", ValueFromPipelineByPropertyName=$true)]    
     [string]$LogFileName = "BitLockerInfo_$(Get-Date -f 'yyyy-MM-dd').csv"
     )
